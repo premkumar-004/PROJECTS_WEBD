@@ -4,6 +4,18 @@
     right: 0;
     top: 0;
     left: 0;
+    box-sizing: border-box;
+}
+
+#new {
+    border: 1px solid white;
+    position: relative;
+    left: 110px;
+    /* top: 0px; */
+    color: black;
+    /* font-size: 10px; */
+    background-color: #f76bd9;
+    border-radius: 5px;
 }
 
 body {

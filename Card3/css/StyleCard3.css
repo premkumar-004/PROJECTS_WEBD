@@ -66,8 +66,16 @@
 
 @media (max-width:565px) and (min-width: 370px) {
     #courseInfo {
-        gap: 10px;
-        padding: 6px;
+        padding: 14px;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+    }
+
+    .leftBox {
+        position: relative;
+        justify-content: flex-start;
+        gap: 0;
     }
 
     .spanTag {

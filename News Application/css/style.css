@@ -59,13 +59,17 @@ nav {
 }
 
 .company-logo img {
-    width: 80px;
-    height: 60px;
+    width: 90px;
+    height: 80px;
     /* mix-blend-mode: darken; */
 }
 
 .nav-links ul {
     gap: 16px;
+}
+
+li {
+    font-size: 1.2rem;
 }
 
 .hover-link {
@@ -78,6 +82,10 @@ nav {
     &:active {
         color: red;
     }
+}
+
+.nav-item.active {
+    color: var(--accent-color);
 }
 
 .search-bar {
@@ -116,7 +124,7 @@ nav {
 
 main {
     padding-block: 20px;
-    margin-top: 95px;
+    margin-top: 120px;
 }
 
 .cards-container {

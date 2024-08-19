@@ -14,14 +14,18 @@ let sub = document.querySelector(".sub");
 let divide = document.querySelector(".divide");
 let mul = document.querySelector(".mul");
 let equal = document.querySelector(".equal");
-
+let cancel = document.querySelector(".cancel");
 
 let btns = document.querySelectorAll(".btn");
 let para = document.querySelector(".para");
+let text = "";
 
-for (let btn of btns) {
-    btn.addEventListner("click", () => {
-        let num = btn.innerText;
-        para.innerText = num;
+btns.forEach(btn => {
+    btn.addEventListener("click", () => {
+        text = btn.innerText;
+        para.innerText = para.innerText + text;
     })
-}
+})
+cancel.addEventListener("click", () => {
+    para.innerText = "";
+})
